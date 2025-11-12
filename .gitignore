@@ -1,0 +1,6 @@
+.venv/
+*.exe
+*.dll
+*.pdb
+*.obj
+*.lib
