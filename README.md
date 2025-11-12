@@ -78,14 +78,6 @@ Task 2 begins with the same load step, then asks for the messaging history limit
 
 The console output shows the current state of the histories to make manual validation easier during the defense of the assignment.
 
-## Notes and Limitations
-
-- Duplicate phone numbers are removed during the initial load; subsequent inserts also prevent reuse of an existing phone number.
-- When contacts share both last and first name, the new node is stored as the predecessor (left child), matching policy `i = 1` from the assignment.
-- The BST is not self-balancing after the initial load. Editing names triggers a delete-and-insert cycle to keep ordering consistent.
-- The programs assume the input files remain correctly sorted and formatted; no extensive validation is performed beyond digit checks for phone numbers.
-- The history structures are reset when the tree is rebuilt. Restart the application if a fresh history is desired.
-
 ## Dataset Format Reminder
 
 Each data file begins with a header row and then lines in the following form:
